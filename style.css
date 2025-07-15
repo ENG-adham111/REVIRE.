@@ -1,0 +1,401 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c896;
+  font-size: 1.1em;
+}
+
+.home {
+  background: url('home.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  position: relative;
+  top: 40%;
+}
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home button {
+  padding: 10px 25px;
+  font-size: 18px;
+  border: none;
+  background-color: #00c896;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+section {
+  padding: 50px 0;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/*--------------------------------------------------------------------*/
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.abt-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  background-color: #00c896;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 170px;
+  height: 50px;
+  text-decoration: none;
+  margin: 20px 0 0 20px;
+  transition: transform 0.3s;
+}
+
+.abt-btn:hover{
+    transform: scale(1.05)
+}
+
+.txt-about{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.txt-about h2 {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about-div img{
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    aspect-ratio: 1/1;
+    transition: transform 0.3s;
+
+}
+
+.about-div img:hover{
+  transform: scale(1.05);
+}
+
+.about-div p{
+    margin-left: 20px;
+    width: 60%;
+    font-size: 18px;
+}
+
+.thicker-p{
+  font-weight: 600;
+  font-size: 20px !important;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.tool{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.tool-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 800px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row.half {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-row.half > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row.full {
+  flex-direction: column;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #818181;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tool-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #00c896;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #009f76;
+  transform: scale(1.05);
+}
+
+.container-tool h2,
+.container-tool label {
+  color: white;
+}
+
+#tool {
+  background-color: #006846;
+  padding: 40px 20px;
+}
+
+.tool-txt{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.tool-txt h2 , .tool-txt h3 , .tool-txt p{
+  color: white;
+  text-align: left !important;
+}
+
+.separator-tool-p{
+  margin-bottom: 30px;
+}
+
+.tool-txt h2{
+  margin-top: 10px;
+}
+
+.tool-txt p{
+  max-width: 400px;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.video-section video {
+  max-width: 85%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container-vid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form textarea{
+    width: 400px;
+    height: 150px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: #006846;
+    
+}
+
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
+
+.contact-text p , .contact-text h3 , .contact-text h2{
+  text-align: left !important;
+  color: white;
+}
+
+.alert{
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 24px;
+  display: none;
+}
+
+.container-contact{
+    padding-right: 20px;
+}
+
+.container-contact h2 , .container-contact label{
+    color: white;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.separator-abt-p{
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 0 20px;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-links p,
+.footer-social a {
+  color: #ccc;
+  display: block;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #00c896;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
